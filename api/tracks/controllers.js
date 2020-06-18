@@ -35,9 +35,15 @@ const controllers = {
     const newObj = JSON.parse(newObjString.toLocaleLowerCase());
 
     const sql = `INSERT INTO tracks (
-                       name
-                   )values("${newObj.name}")`;
-
+      Name,
+      AlbumId,
+      MediaTypeId,
+      GenreId,
+      Composer,
+      Milliseconds,
+      Bytes,
+      UnitPrice
+  )values("${newObj.name}",${newObj.albumid}, ${newObj.mediatypeid}, ${newObj.genreid}, "${newObj.composer}", ${newObj.milliseconds}, ${newObj.bytes}, ${newObj.unitprice})`;
     db.run(sql, function (err) {
       if (err) {
 
@@ -55,9 +61,15 @@ const controllers = {
     const newObj = JSON.parse(newObjString.toLocaleLowerCase());
     const sql = `UPDATE tracks
     SET 
-     name = "${newObj.name}"
-    WHERE tracks = ${Number(req.params.id)}`;
-
+    Name = "${newObj.name}",
+    AlbumId =${newObj.albumid} ,
+    MediaTypeId =${newObj.mediatypeid} ,
+    GenreId = ${newObj.genreid},
+    Composer = "${newObj.composer}",
+    Milliseconds = ${newObj.milliseconds},
+    Bytes =${newObj.bytes} ,
+    UnitPrice = ${newObj.unitprice}
+WHERE trackId = ${Number(req.params.id)}`;
     db.run(sql, function (err) {
       if (err) {
         res.status(400).json({ "error": err.message });
