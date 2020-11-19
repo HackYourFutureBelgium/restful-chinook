@@ -1,18 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>courses web-app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Invoice Overview | Database </title>
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/flexgrid.css">
+  <script src="https://kit.fontawesome.com/f8746982fe.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <div id='root'></div>
+  <div class="page-container">
 
-  <script src='./app/init.js'></script>
+    <header class="header-wrapper ">
+      <div class="header">
+        <div class="row center-xs center-sm end-md end-lg middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h1 class="site-title">BillTracker</h1>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="account"><i class="fas fa-user-circle"></i>Account</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main-wrapper">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="file-options-wrapper">
+                    <button class="buttons-file current">Customer</button>
+                    <button class="buttons-file">Invoice</button>
+                </div>
+
+                <form class="input-options-wrapper">                
+                    <select class="input-styles">
+                      <option value="name">Search by Name</option>
+                      <option value="country">Search by Country</option>
+                    </select> 
+                    <input type="search" placeholder="Type here" class="input-styles">
+                    <div class="action-buttons">
+                      <button type="reset">Reset</button>
+                      <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <img class="details-pic-style" src="./images/design_by_upklyak_freepik.jpg" alt="monthly revenue design by upklyak freepik">
+            </div>
+        </div>
+    </section>
+    
+    <!--To HIDE with Javascript, only appear after Search button is clicked-->
+    <section class="content-wrapper">
+      <div class="result-display">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <table class="tg">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Country</th>
+                  <th>Invoice ID</th>
+                  <th>Invoice Date</th>
+                  <th>Total Billing(m)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Abe Budiman</td>
+                  <td>Indonesia</td>
+                  <td>5</td>
+                  <td>19-10-2020</td>
+                  <td>1.8</td>
+                </tr>
+                <tr>
+                  <td>Abe Budiman</td>
+                  <td>Indonesia</td>
+                  <td>12</td>
+                  <td>22-10-2020</td>
+                  <td>2.2</td>
+                </tr>
+                <tr>
+                  <td>Kenji Abe</td>
+                  <td>Japan</td>
+                  <td>8</td>
+                  <td>22-10-2020</td>
+                  <td>2.2</td>
+                </tr>
+                <tr>
+                  <td>Kenji Abe</td>
+                  <td>Japan</td>
+                  <td>20</td>
+                  <td>26-10-2020</td>
+                  <td>0.8</td>
+                </tr>
+                <tr>
+                  <td>Kenji Abe</td>
+                  <td>Japan</td>
+                  <td>24</td>
+                  <td>06-11-2020</td>
+                  <td>1.8</td>
+                </tr>
+                <tr>
+                  <td>Masayo Abe</td>
+                  <td>Japan</td>
+                  <td>4</td>
+                  <td>16-10-2020</td>
+                  <td>0.8</td>
+                </tr>
+                <tr>
+                  <td>Kenji Abe</td>
+                  <td>Japan</td>
+                  <td>24</td>
+                  <td>06-11-2020</td>
+                  <td>1.8</td>
+                </tr>
+                <tr>
+                  <td>Masayo Abe</td>
+                  <td>Japan</td>
+                  <td>4</td>
+                  <td>16-10-2020</td>
+                  <td>0.8</td>
+              </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-wrapper ">
+      <div class="footer">
+       <div class="row center-xs center-sm end-md end-lg middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h4>Module 10 Database Project with SQLite</h4>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p>HFY Belgium 9-10 #4: Yildiray, Yana, Yulia & Hazem </p>
+          </div>
+        </div> 
+      </div>
+    </footer>
+  </div>
+
+  <script type='module' src='./app/init.js'></script>
 </body>
 
 </html>

@@ -1,0 +1,286 @@
+body {
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+/*HEADER*/
+.footer-wrapper, .header-wrapper {
+  background-color: #334e8b;
+  color: white;
+  padding: 20px;
+  margin: auto;
+}
+
+.header, .footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.site-title {
+  font-size: 32px;
+  text-align: left;
+  letter-spacing: 2px;
+}
+
+.account {
+  font-size: 24px;
+  text-align: right;
+}
+
+.account i {
+  margin-right: 7px;
+}
+
+.account.fas {
+  color: #7391ac;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+/*MAIN - FORM - INPUT*/
+
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px 80px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.file-options-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.buttons-file {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 28px;
+  box-shadow: 0px 1px grey;
+  background-color: #f2f2f2;
+}
+
+.current {
+  background-color: #334e8b;
+  color: white;
+  transform: translateY(-0.1rem);
+  box-shadow: 0px 3px #3ba1fd;
+  padding: 15px;
+}
+
+.input-options-wrapper {
+  box-shadow: 2px 2px 2px 2px grey;
+  padding: 40px;
+  border-radius: 7px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.input-styles {
+  margin: 15px auto;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+/* HELP: does not work?*/
+select option {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+select option:hover {
+  cursor: pointer;
+}
+/*----*/
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.action-buttons button {
+    width: 120px;
+    padding: 12px 8px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px grey;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.action-buttons button:hover {
+  background-color: #334e8b ;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  border-radius: 7px;
+  margin: 0px;
+  align-content: flex-end;
+  justify-content: flex-end;
+  opacity: 0.9;
+}
+
+/*RESULT - CONTENT */
+.content-wrapper {
+  background-color: #f2f2f2;
+  border-radius: 15% 15% 0% 0%;
+}
+
+.result-display {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.tg th {
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 20px;
+  word-break: normal;
+  width: max-content;
+  background-color: #7391ac;
+  text-transform: uppercase;
+}
+
+.tg td {
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 20px 20px;
+  word-break: normal;
+  width: max-content;
+}
+
+.footer h4 {
+  text-align: left;
+}
+
+.footer p {
+  text-align: right;
+
+}
+
+/*MEDIA*/
+/*
+@media (max-width:2300px) {
+
+}
+
+@media (max-width:1900px) {
+
+}
+
+@media (max-width:1200px) {
+
+}*/
+
+@media (max-width:1000px) {
+  .site-title {
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .account {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .buttons-file {
+    font-size: 20px;
+  }
+
+  .action-options button {
+    font-size: 14px;
+  }
+
+  .action-buttons button {
+  font-size: 14px;
+  }
+
+  .tg th, .tg td {
+    font-size: 14px;
+  }
+
+  .footer h4, .footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width:500px) {
+
+  .tg th, .tg td {
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .main-wrapper {
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .content-wrapper {
+    margin-top: 20px;
+  }
+
+  .action-buttons button {
+    margin: 0 8px;
+
+  }
+
+  .footer h4, .footer p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+}
