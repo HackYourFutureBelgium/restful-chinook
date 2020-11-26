@@ -1,3 +1,21 @@
 body {
-  background-color: peachpuff;
+    background-color: peachpuff;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+#container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+h1 {
+    font-size: 1em;
+    columns: #333333;
+}
+
+h1 span {
+    font-size: .6em;
+    color: chocolate;
 }
